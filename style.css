@@ -1,0 +1,159 @@
+/* กำหนดตัวแปรสีและฟอนต์ */
+:root {
+    --primary-color: #34495e; /* สีน้ำเงินเข้ม */
+    --secondary-color: #2ecc71; /* สีเขียว */
+    --background-color: #f4f7f6; /* สีเทาอ่อน */
+    --text-color: #2c3e50; /* สีเทาเข้ม */
+}
+
+/* สไตล์หลักของหน้าเว็บ */
+body {
+    font-family: 'Sarabun', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* สไตล์ส่วนหัว */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* สไตล์ส่วนเนื้อหาหลัก */
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* สไตล์ข้อมูลติดต่อ */
+#contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact-info li {
+    margin-bottom: 10px;
+}
+
+/* สไตล์แบบฟอร์ม */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.submit-button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #27ae60;
+}
+
+/* สไตล์แผนที่ */
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* อัตราส่วน 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* สไตล์โซเชียลมีเดีย */
+.social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.social-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* สไตล์ส่วนท้าย */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 20px;
+}
+
+/* Responsive Design สำหรับหน้าจอมือถือ */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    
+    main {
+        padding: 0 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
